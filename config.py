@@ -1,2 +1,2 @@
-chat_api ='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'
-token = '6159658970:AAG7xv4QMAPkWSuFlTGGNqsUaE1dVqk0lGA'
+chat_api =''
+token = ''
