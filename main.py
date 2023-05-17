@@ -9,6 +9,10 @@ chat_api= config.chat_api
 bot = Bot(config.token)
 dp = Dispatcher(bot)
 
+@dp.message_handler(commands=['start'])
+async def start_command(message: types.Message):
+    # Ответ на команду /start
+    await message.reply("Добро пожаловать! Я бот на основе ChatGPT API - спросите меня о чем угодно:)")
 @dp.message_handler()
 async def chat_cmd(message: types.Message):
     openai.api_key = chat_api
